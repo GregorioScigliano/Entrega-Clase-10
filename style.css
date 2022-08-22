@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.contenedor-header{
+    background-color: orange;
+}
+.contenedor-header .titulo-header{
+    font-family: 'Bungee Shade', cursive;
+    color: black;
+    font-size: 40px;
+    animation-name: titulo-pagina;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    text-align: center;
+
+}
+.contenedor-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 5px;
+}
+.imagen-main{
+    width: 600px;
+    height: 600px;
+    padding: 5px;
+}
+.contenedor-texto-main{
+    background-image: linear-gradient(to left, red, orange, yellow);
+    padding: 10px;
+    border: 5px solid black;
+}
+.texto-main{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.span{
+    font-weight: bold;
+}
+
+.contenedor-footer{
+    background-color: #00ffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.contenedor-texto-footer{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: #00ffff;
+    text-align: center;
+}
+.texto-footer:hover{
+    font-weight: bolder;
+    color: red;
+}
+.imagen-footer{
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes titulo-pagina{
+    0% {
+        color: black;
+    }
+    25% {
+        color: red;
+    }
+    50% {
+        color: cyan;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: white;
+    }
+}
